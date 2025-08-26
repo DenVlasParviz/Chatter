@@ -1,0 +1,32 @@
+{
+  "dependencies": {
+    "@clerk/express": "^1.7.24",
+    "@sentry/node": "^10.5.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "eslint": "^9.33.0",
+    "express": "^5.1.0",
+    "inngest": "^3.40.1",
+    "mongoose": "^8.17.2",
+    "nodemon": "^3.1.10",
+    "prettier": "^3.6.2",
+    "react-router": "^7.8.2",
+    "stream-chat": "^9.17.0"
+  },
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "dev": "cross-env NODE_OPTIONS=--import=./instrument.mjs nodemon src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "cross-env": "^10.0.0"
+  }
+}
