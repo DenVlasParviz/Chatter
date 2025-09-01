@@ -5,6 +5,7 @@ import HomePage from "./pages/HomePage.jsx";
 import AuthPage from "./pages/AuthPage.jsx";
 import toast from "react-hot-toast";
 import {useAuth} from "@clerk/clerk-react"
+import WebChat from "././components/WebChat.jsx"
 
 import CallPage from "./pages/CallPage.jsx";
 
@@ -20,6 +21,7 @@ const App = () => {
             <Route path="/call/:id" element={isSignedIn ? <CallPage/> : <Navigate to={"/auth"} replace/>}/>
 
             <Route path="*" element={isSignedIn ? <Navigate to={"/"} replace/> : <Navigate to={"/auth"} replace/>}/>
+            <Route path="/call/webchat/:id" element={<WebChat/>}/>
 
         </Routes>
     )

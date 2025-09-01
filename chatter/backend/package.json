@@ -6,12 +6,17 @@
     "dotenv": "^17.2.1",
     "eslint": "^9.33.0",
     "express": "^5.1.0",
+    "freeice": "^2.2.2",
     "inngest": "^3.40.1",
     "mongoose": "^8.17.2",
     "nodemon": "^3.1.10",
     "prettier": "^3.6.2",
     "react-router": "^7.8.2",
-    "stream-chat": "^9.17.0"
+    "socket.io": "^4.8.1",
+    "socket.io-client": "^4.8.1",
+    "stream-chat": "^9.17.0",
+    "uuid": "^11.1.0",
+    "websocket": "^1.0.35"
   },
   "name": "backend",
   "version": "1.0.0",
